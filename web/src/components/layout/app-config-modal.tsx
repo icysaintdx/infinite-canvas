@@ -215,7 +215,7 @@ export function AppConfigModal() {
                         <>
                             <div className="grid gap-4 md:grid-cols-2">
                                 <Form.Item label="Base URL" className="mb-4">
-                                    <Input value={config.baseUrl} onChange={(event) => updateConfig("baseUrl", event.target.value)} />
+                                    <Input value={config.baseUrl} disabled />
                                 </Form.Item>
                                 <Form.Item label="API Key" className="mb-4">
                                     <Input.Password value={config.apiKey} onChange={(event) => updateConfig("apiKey", event.target.value)} />
@@ -332,7 +332,7 @@ export function AppConfigModal() {
                                 <Input value={webdav.url} placeholder="https://nas.example.com/webdav" onChange={(event) => updateWebdavConfig("url", event.target.value)} />
                             </Form.Item>
                             <Form.Item label="远程目录" extra={`会在该目录下分业务目录保存，每个目录包含 ${WEBDAV_MANIFEST_FILE_NAME} 和 files/`} className="mb-4">
-                                <Input value={webdav.directory} placeholder="infinite-canvas" onChange={(event) => updateWebdavConfig("directory", event.target.value)} />
+                                <Input value={webdav.directory} placeholder="ISaint-canvas" onChange={(event) => updateWebdavConfig("directory", event.target.value)} />
                             </Form.Item>
                             <Form.Item label="用户名" className="mb-0">
                                 <Input value={webdav.username} autoComplete="username" onChange={(event) => updateWebdavConfig("username", event.target.value)} />

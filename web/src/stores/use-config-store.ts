@@ -50,7 +50,7 @@ export type ModelCapability = "image" | "video" | "text" | "audio";
 
 export const defaultConfig: AiConfig = {
     channelMode: "local",
-    baseUrl: "https://api.openai.com",
+    baseUrl: "https://isaint.cc",
     apiKey: "",
     model: "gpt-image-2",
     imageModel: "gpt-image-2",
